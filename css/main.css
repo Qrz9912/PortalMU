@@ -1,0 +1,294 @@
+/*  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+body{
+    background-color: #f3f3f2;
+}
+
+.menu1{
+    background-color: #282828;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.menu1 ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10%;
+
+}
+
+.menu1 li{ 
+    margin: 0 5px;
+} 
+
+.menu2{
+    background-color: #c41011;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
+
+.menulogo{
+    margin-right: 5%;
+}
+
+.menu2 a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu2 ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu2 li {    
+    margin-right: 40px;
+
+}
+
+/* Page Home */
+.home p{
+    font-size: 60px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.mainContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxleft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 2%;
+}
+
+.boxleft img{
+    background-position: center;
+    background-size: cover;
+    max-width: 700px;
+    min-width: 10px;
+    height: auto;
+    transition: all 0.3s ease-in;
+}
+
+.boxleftTexthome {
+    width: 700px;
+    height: auto;
+    display: flex;
+    justify-content: start;
+}
+
+.boxleftTexthome p {
+    text-align: left;
+    font-size: 23px;
+}
+
+.boxright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 2%;
+}
+
+.boxright img{
+    background-position: center;
+    background-size: cover;
+    max-width: 700px;
+    min-width: 10px;
+    height: auto;
+    transition: all 0.3s ease-in;
+}
+
+.boxrightTexthome {
+    width: 700px;
+    height: auto;
+    display: flex;
+    justify-content: start;
+}
+
+.boxrightTexthome p {
+    text-align: left;
+    font-size: 23px;
+}
+
+.boxright img:hover, .boxleft img:hover {
+    scale: 1.02;
+}
+
+
+
+@media screen and (max-width: 1550px) {
+    .mainContainer{
+        flex-direction: column;
+    }
+
+    .boxright{
+        margin: 5% 0;
+    }
+
+    .boxleft{
+        margin: 5% 0;
+    }
+    
+}
+
+
+/* PAGINA FA CUP */
+
+
+.mainFACup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxFACup a{
+    background-color: #f3f3f2;
+    width: 600px;
+    height: 400px;
+    margin: 2% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.boxFACup p{
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 3%;
+}
+
+/* Page Temporada */
+
+.mainTemporada{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.boxChampionsleague{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 2%;
+    
+}
+
+.boxChampionsleague img{
+    background-position: center;
+    background-size: cover;
+    max-width: 700px;
+    min-width: 10px;
+    height: auto;
+    transition: all 0.3s ease-in;
+}
+
+.boxTextChampions{
+    width: 700px;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    margin: 4%;
+}
+
+.boxTextChampions p{
+    text-align: left;
+    font-size: 18px;
+    
+}
+
+.boxPremierLeague{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 2%;
+}
+
+.boxPremierLeague img{
+    background-position: center;
+    background-size: cover;
+    max-width: 700px;
+    min-width: 10px;
+    height: auto;
+    transition: all 0.3s ease-in;
+    margin: 5% 0;
+}
+
+.boxPremierLeague p {
+    color: black;
+    font-size: 18px;
+    margin: 4% ;
+}
+
+.boxTextPL{
+    width: 700px;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    
+}
+
+.boxTextPL p{
+    text-align: left;
+    font-size: 18px;
+}
+
+.boxChampionsleague img:hover, .boxPremierLeague img:hover {
+    scale: 1.02;
+}
+
+@media screen and (max-width: 1550px) {
+    .mainTemporada{
+        flex-direction: column;
+    }
+
+    .boxChampionsleague{
+        margin: 5% 0;
+    }
+
+    .boxPremierLeague{
+        margin: 5% 0;
+    }
+    
+}
+
+.footerContainer{
+    
+    width: 100%;
+    height: 10vh;
+    background-color: #282828;
+    position: absolute;
+    bottom: 0;
+
+}
